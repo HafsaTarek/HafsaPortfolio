@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HafsaPortfolio/static/css/main.1b65982a.css",
+    "main.js": "/HafsaPortfolio/static/js/main.3a9c5eff.js",
+    "index.html": "/HafsaPortfolio/index.html",
+    "main.1b65982a.css.map": "/HafsaPortfolio/static/css/main.1b65982a.css.map",
+    "main.3a9c5eff.js.map": "/HafsaPortfolio/static/js/main.3a9c5eff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b65982a.css",
+    "static/js/main.3a9c5eff.js"
+  ]
+}
