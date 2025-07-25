@@ -1,0 +1,61 @@
+/* Header Styles */
+.bg-pink {
+  background-color: var(--background-color);
+}
+
+.navbar{
+  position: fixed !important;
+  z-index: 50 !important;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: var(--primary-color) !important; /* pink color */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #e62c8f !important;
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width:0%;
+  height:1.5px;
+  left:0;
+  bottom:-4px;
+  background-color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width:100%;
+}
+
+.navbar .nav-link:hover {
+  color: #ff1493;
+}
+
+.navbar-toggler {
+  border-color: #e91e63 !important;
+  background-color: var(--primary-color) !important;
+  color:var(--background-color) !important;
+  font-weight: 500 !important;
+}

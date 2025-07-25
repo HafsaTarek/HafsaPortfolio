@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--background-color);
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px !important;
+  font-size: 1.02rem !important;
+  color:var(--text-color) ;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-link {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
