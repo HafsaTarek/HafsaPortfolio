@@ -4,6 +4,7 @@
   max-width: 600px;
   margin: auto;
   font-family: "Poppins", sans-serif;
+  transform: translateY(-25px);
 }
 
 .section-title {
