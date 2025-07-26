@@ -15,7 +15,7 @@ const About = (_) => {
 
           <div className="col-md-7">
             <h2 className="mb-3">About Me</h2>
-            <p>
+            <p className="about-text">
               I'm <strong>Hafsa</strong>, a passionate{" "}
               <strong>Front-End Developer</strong> with a strong love for
               crafting responsive, user-friendly websites using{" "}
@@ -23,7 +23,7 @@ const About = (_) => {
               <strong>CSS</strong>, and a keen eye for{" "}
               <strong>UI/UX design</strong>.
             </p>
-            <p>
+            <p className="about-text">
               I enjoy turning ideas into real-world web experiences, always
               learning and staying updated with modern technologies. When I'm
               not coding, you'll find me exploring creative design ideas or

@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -63,4 +68,15 @@ p {
 
 a {
   text-decoration: none;
+}
+
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
 }

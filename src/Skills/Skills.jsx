@@ -1,52 +1,59 @@
-import "./Skills.css";
+import React, { useEffect, useState, forwardRef } from "react";
+import { useInView } from "react-intersection-observer"; //we use this hook to detect when a section is visible to know when to start the animation
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
-  FaBootstrap,
-  FaGithub,
-  FaPaintBrush,
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma, FaBootstrap, FaPaintBrush,
 } from "react-icons/fa";
-import { SiFigma } from "react-icons/si";
-
-const brandColor = "#ff69b4"; 
+import "./Skills.css";
 
 const skills = [
-  { name: "HTML5", icon: FaHtml5, color: brandColor },
-  { name: "CSS3", icon: FaCss3Alt, color: brandColor },
-  { name: "JavaScript", icon: FaJsSquare, color: brandColor },
-  { name: "React.js", icon: FaReact, color: brandColor },
-  { name: "Bootstrap", icon: FaBootstrap, color: brandColor },
-  { name: "Git & GitHub", icon: FaGithub, color: brandColor },
-  { name: "UI/UX Design", icon: FaPaintBrush, color: brandColor },
-  { name: "Figma", icon: SiFigma, color: brandColor },
+  { name: "HTML", level: 90, icon: <FaHtml5 color="#e34c26" /> },
+  { name: "CSS", level: 85, icon: <FaCss3Alt color="#264de4" /> },
+  { name: "JavaScript", level: 80, icon: <FaJs color="#f0db4f" /> },
+  { name: "React", level: 75, icon: <FaReact color="#61dbfb" /> },
+  { name: "Figma", level: 70, icon: <FaFigma color="#a259ff" /> },
+  { name: "Bootstrap", level: 75, icon: <FaBootstrap color="#563d7c" /> },
+  { name: "UI/UX", level: 80, icon: <FaPaintBrush color="#d63384" /> },
 ];
 
-export default function Skills() {
+const Skills = forwardRef((props, ref) => {
+  const { ref: inViewRef, inView } = useInView({ threshold: 0.3 });
+  const [animate, setAnimate] = useState(false);
+
+  const setRefs = (node) => {
+    inViewRef(node);
+    if (ref) ref.current = node;
+  };
+
+  useEffect(() => {
+    if (inView) {
+      setAnimate(true);
+    } else {
+      setAnimate(false);
+    }
+  }, [inView]);
+
   return (
-    <section id="skills" className="skills-section py-5">
-      <div className="container">
-        <h2 className="text-center mb-4">My Skills</h2>
-        <div className="row">
-          {skills.map((skill, index) => {
-            const Icon = skill.icon;
-            return (
-              <div
-                key={index}
-                className="col-6 col-md-3 mb-4 skill-box"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="skill-card text-center p-3 rounded shadow-sm">
-                  <Icon size={48} color={skill.color} />
-                  <p className="mt-2">{skill.name}</p>
-                </div>
-              </div>
-            );
-          })}
+    <div id="skills" className="skills-container" ref={setRefs}>
+      <h2>My Skills</h2>
+      {skills.map((skill, index) => (
+        <div className="skill" key={index}>
+          <div className="skill-label">
+            <div className="skill-icon">
+              <span className="icon">{skill.icon}</span>
+              <span>{skill.name}</span>
+            </div>
+            <span>{skill.level}%</span>
+          </div>
+          <div className="progress-bar">
+            <div
+              className={`progress-fill ${animate ? "animate" : ""}`}
+              style={{ width: animate ? `${skill.level}%` : "0%" }}
+            ></div>
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
-}
+});
+
+export default Skills;
