@@ -44,7 +44,7 @@ const Contact = () => {
             <FaLinkedin className="icon" /> LinkedIn: Hafsa Hikal
           </a>
           <a
-            href="https://drive.google.com/file/d/11_RIf83xnXr0ibKBr3B6SGFytHZKF5R9/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1IaqLI9EqYDFM7ICDqXVcoTUtkh-xyBdx/view?usp=drive_link"
             className="contact-link"
             target="_blank"
             rel="noopener noreferrer"
