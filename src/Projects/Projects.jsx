@@ -13,7 +13,7 @@ const Projects = () => {
     },
     {
       title: "Pet Shop",
-      description: "Responsive pet store website built with HTML5 and CSS3.",
+      description: "pet store website built with HTML5 and CSS3.",
       image: `${process.env.PUBLIC_URL}/Images/pet store.png`,
       liveLink: "https://hafsatarek.github.io/Pet-Shop/",
       codeLink: "https://github.com/HafsaTarek/Pet-Shop",
@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: "Resort Website",
       description:
-        "A multi-section resort landing page using HTML5, CSS3 and Bootstrap.",
+        "A responsive multi-section resort landing page using HTML5, CSS3 and Bootstrap.",
       image: `${process.env.PUBLIC_URL}/Images/resort.png`,
       liveLink: "https://hafsatarek.github.io/Resort-website/",
       codeLink: "https://github.com/HafsaTarek/Resort-website",
@@ -44,8 +44,7 @@ const Projects = () => {
     },
     {
       title: "GlamGourmet - Food Delivery App",
-      description:
-        "A React-based modern food delivery platform with routing and cart features.",
+      description: "A React-based modern food delivery platform.",
       image: `${process.env.PUBLIC_URL}/Images/glamgourmet.png`,
       liveLink: "https://hafsatarek.github.io/GlamGourmet/",
       codeLink: "https://github.com/HafsaTarek/GlamGourmet",
