@@ -1,11 +1,11 @@
 import "./Footer.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer text-center py-4">
       <div className="container">
-        <div className="footer-icons d-flex justify-content-center gap-4 mb-3">
+        <div className="footer-icons d-flex justify-content-center flex-wrap gap-4 mb-3">
           <a
             href="https://github.com/HafsaTarek"
             target="_blank"
@@ -23,6 +23,13 @@ const Footer = () => {
             aria-label="LinkedIn"
           >
             <FaLinkedin className="footer-icon" />
+          </a>
+          <a
+            href="mailto:hafsatarek4@gmail.com"
+            className="footer-link"
+            aria-label="Email"
+          >
+            <FaEnvelope className="footer-icon" />
           </a>
         </div>
         <p className="footer-text mb-0">
