@@ -30,7 +30,7 @@ const Contact = () => {
 
           {/* CV */}
           <a
-            href="https://drive.google.com/file/d/1cSxQGtXhXnAeaQk6D8WscZhCxFckGw9P/view?usp=drive_link"
+            href="https://drive.google.com/file/d/11_RIf83xnXr0ibKBr3B6SGFytHZKF5R9/view?usp=drive_link"
             className="contact-link"
             target="_blank"
             rel="noopener noreferrer"
