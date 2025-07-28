@@ -9,7 +9,7 @@ const About = (_) => {
             <img
               src={`${process.env.PUBLIC_URL}/Images/Hafsa.jpg`}
               alt="Hafsa"
-              className="img-fluid rounded-4 about-img"
+              className="img-fluid rounded-4 about-img w-75 w-md-100 mb-2"
             />
           </div>
 
