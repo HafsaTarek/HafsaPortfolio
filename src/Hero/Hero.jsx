@@ -27,7 +27,7 @@ const Hero = (_) => {
             <img
               src={`${process.env.PUBLIC_URL}/Images/Hafsa.jpg`}
               alt="Hafsa Illustration"
-              className="img-fluid hero-img w-75 w-md-100"
+              className="img-fluid hero-img w-65 w-md-100"
             />
           </div>
         </div>
