@@ -8,9 +8,9 @@ const Hero = (_) => {
           {/* Title/header Col */}
           <div className="col-md-6">
             <h1 className="hero-title">
-              Hi, I’m <span className="highlighted">Hafsa</span>
+              Hi, I’m <span className="highlighted">Hafsa,</span>
               <br />
-              Front-End Developer
+              Front-End Developer & UI/UX Designer
             </h1>
             <p className="hero-subtitle">
               I love crafting beautiful and functional websites with React,
